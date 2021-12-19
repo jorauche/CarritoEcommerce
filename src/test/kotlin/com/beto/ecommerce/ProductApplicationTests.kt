@@ -60,15 +60,12 @@ class ProductApplicationTests {
 	@Test
 	@Order(4)
 	fun d_saveCarrito(){
-//		val product = Product(name="PineApple", price = 50.0)
 		val productFromService = productService.findAll()
 		val request = CarritoRequest("LGT-GAP-NEG-1256",2)
 		val response = mockMvc.perform(MockMvcRequestBuilders.post(productEndPoint.plus("agregar/producto/carrito"))
 				//.body(data = product,mapper = mapper)) nuevao funcionalidad que hace lo mismo abajo
 				.content(mapper.writeValueAsBytes(request)).contentType(MediaType.APPLICATION_JSON_UTF8))// con el UF8 me muestra el body, si no lo tiene se imprime
 				.andExpect(status().isAccepted)
-
-
 		val carritCompra = productService.consultaCarrito()
 		assert(carritCompra.isNotEmpty())
 	}
