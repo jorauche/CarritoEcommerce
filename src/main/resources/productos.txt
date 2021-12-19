@@ -1,0 +1,3 @@
+25689|Gorra Gap|GOR-GAP-NEG-XS|Gorra negra tamano chico|200.0|4|Unidades
+25789|Telefono huawei|ELEC-TEL-HUW-AZUL|Telefono huawei|10000.0|14|Unidades
+25889|PS4|PS-PLAY4-NEG-SE|Play station standard|13500.0
