@@ -17,7 +17,7 @@ En el trascurso del proyecto vamos a usar las siguientes herramientas y siguient
 <!-- Empezamos -->
 ## Empezamos
 
-La estructura del proyecto que esta hech en kotlin, se baso en un patron MVC, la simulación de los datos se tiene un lista donde se hace la administración del carrito con los servicios rest.
+La estructura del proyecto se utilizo maven y  kotlin como lenguaje de programación apoyandonos con el framework de spring boot, se baso en un patron MVC, la simulación de los datos se tiene un lista donde se hace la administración del carrito con los servicios rest.
 Para exponer los servicios , como las buenas prácticas se usaron adecuadamente los verbos POST,PUT,DELETE Y GET dependiendo el tipo de operación a realizar en el carrito de compra.
 
 ![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/EstructuraProyecto.png)
