@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "8fa5d7f5-1438-4111-babd-5f75607ae389",
+		"name": "Trabajos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tul",
+			"item": [
+				{
+					"name": "ObtenerProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce/obtener/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce",
+								"obtener",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n {\n            \"nombre\": \"Jabra Elite 75t\",\n            \"sku\": \"GOR-GAP-NEG-XS\",\n            \"descripcion\": \"Audifonoes Bluetooth con Cancelacion activa de ruido y bateria de larga duracion\",\n            \"precio\": 2099.0,\n            \"descuento\": \"descuento\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualiza Producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n        \"nombre\": \"Bocinas lG\",\n        \"sku\": \"BOC-LGP-NEG-XS-56897\",\n        \"descripcion\": \"Bocinas LG 12 pulgadas\",\n        \"precio\": 10.0,\n        \"descuento\": \"simple\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarProducto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce/KDL-10-GEN-785623",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce",
+								"KDL-10-GEN-785623"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultaProductoPor ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce/HIN-R6000GM-PLAT-1025887",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce",
+								"HIN-R6000GM-PLAT-1025887"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Carrito Producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"carritoCompra\":\n     {\n        \"producto\": {\n            \"uuid\": \"29f37555-3fc6-4d89-ba9a-64927d537613\",\n            \"nombre\": \"Mouse LGT23 lG\",\n            \"sku\": \"LGT-GAP-NEG-1256\",\n            \"descripcion\": \"Mause Logitech inhalambrico\",\n            \"precio\": 45.3,\n            \"descuento\": \"descuento\"\n        },\n        \"cantidad\": 2,\n        \"estado\": \"PENDIENTE\"\n    }\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce/actualizar/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce",
+								"actualizar",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarCarrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n     \"sku\": \"HIN-R6000GM-PLAT-1025887\",\n    \"cantidad\": 2\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce/agregar/producto/carrito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce",
+								"agregar",
+								"producto",
+								"carrito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultaCarrito",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce/consulta/carrito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce",
+								"consulta",
+								"carrito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckOut",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/ecommerce/total",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ecommerce",
+								"total"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
