@@ -31,7 +31,7 @@ class CarritoService: BasicCrud<Product, String> {
 	override fun save(t: Product): Boolean= this.lstProducto.add(t);
 
 	override fun update(t: Product): Boolean {
-		lstProducto.removeIf { it.uuid==t.uuid }
+		lstProducto.removeIf { it.sku==t.sku }
 		logger.info("Actualizando Producto", lstProducto)
 		return this.lstProducto.add(t)
 	}
