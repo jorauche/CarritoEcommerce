@@ -21,6 +21,9 @@ Para exponer los servicios , como las buenas prácticas se usaron adecuadamente 
 
 ![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/EstructuraProyecto.png)
 
+* Contamos con pruebas unitarias en el proyecto 
+![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/PruebasUnitarias.png)
+
 ## Ejecutando las pruebas ⚙️
 Las pruebas se realizaron desde el postman
 
@@ -43,3 +46,25 @@ Las pruebas se realizaron desde el postman
 * Obtener todos los productos
 
 ![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/ObtenerProductos.png)
+
+### Administración del carrito de compra
+
+* Agregar un producto al carrito de compra, junto agregando la cantidad que desea comprar el cliente
+
+![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/AgregarProductoCarrito.png)
+
+* Consulta los productos agregados al carrito de compra
+
+![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/ConsultaProductosCarrito.png)
+
+* Actualiza un producto del carrito de compra
+
+![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/ActualizaProductoCarrito.png)
+
+![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/ResultadoActualizaCarritoProducto.png)
+
+* Por ultimo el resultado de la compra y los productos en completado.
+
+![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/TotalCompra.png)
+![alt text](https://github.com/jorauche/CarritoEcommerce/blob/master/Pantallas/CarritoEstatusCompletado.png)
+
