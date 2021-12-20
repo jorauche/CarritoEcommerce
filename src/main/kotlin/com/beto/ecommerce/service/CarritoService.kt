@@ -90,7 +90,7 @@ class CarritoService: BasicCrud<Product, String> {
 		var lstCompraProductos : MutableList<List<CarritoCompra>> = ArrayList()
 		logger.info("Se genera el costo total de la compra")
 		for(carrito in lstCarritoCompra){
-			totalCompra = carrito.producto.precio?.times(carrito.cantidad)!!
+			totalCompra += carrito.producto.precio?.times(carrito.cantidad)!!
 			carrito.estado = EstadoEnum.COMPLETADO
 //			lstCompraProductos.forEachIndexed{index,it -> lstCompraProductos.add(index,it) }
 
