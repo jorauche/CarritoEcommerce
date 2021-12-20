@@ -28,7 +28,7 @@ import java.util.*
 
 @SpringBootTest
 //@AutoConfigureMockMvc// ahora el siguiente paso es por configuracion manual
-class ProductApplicationTests {
+class CarritoApplicationTests {
 
 	@Autowired private lateinit var mapper: ObjectMapper
 	@Autowired private lateinit var webApplicationContex: WebApplicationContext
